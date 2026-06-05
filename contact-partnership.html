@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>(주)올어바웃팜 - CONTACT &amp; PARTNERSHIP</title>
+  <meta name="description" content="올어바웃팜 문의 및 파트너십 — 펫푸드 제조사, 농가, 스타트업·브랜드, 해외 바이어와 함께합니다." />
+  <link rel="icon" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="(주)올어바웃팜 로고" />
+        <span class="brand-name">(주)올어바웃팜</span>
+      </a>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="brand.html">BRAND</a></li>
+          <li><a href="product-service.html">PRODUCT &amp; SERVICE</a></li>
+          <li><a href="technology.html">TECHNOLOGY</a></li>
+          <li><a href="wellness-story.html">WELLNESS STORY</a></li>
+          <li><a href="contact-partnership.html" aria-current="page">CONTACT &amp; PARTNERSHIP</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn js-search-toggle" aria-label="검색 열기">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="search-bar">
+    <div class="container">
+      <form role="search">
+        <input type="search" placeholder="사이트 내 검색 (예: 스마트팜, 펫푸드, 특허)" aria-label="검색어" />
+        <button type="submit">검색</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="page-head">
+    <div class="container">
+      <h1>CONTACT &amp; PARTNERSHIP</h1>
+      <p class="lead">올어바웃팜과 함께할 파트너를 기다립니다. 아래 폼으로 문의해 주세요.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- 문의 폼 -->
+      <div class="form-card" style="max-width:680px; margin:0 auto;">
+        <h2>문의하기</h2>
+        <p class="desc">제품·서비스·파트너십 등 어떤 문의든 남겨 주시면 빠르게 회신드리겠습니다.</p>
+        <!--
+          [작동 폼 설정 안내]
+          1) https://formspree.io 가입 후 heyseou@gmail.com 으로 폼 생성
+          2) 발급된 엔드포인트(https://formspree.io/f/XXXXXXXX)를 아래 action 의 YOUR_FORM_ID 자리에 교체
+          미설정 상태에서는 자동으로 메일앱(mailto) 전송으로 폴백됩니다.
+        -->
+        <form class="js-contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="field">
+            <label for="name">이름 / 회사명 <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="홍길동 / (주)○○" />
+          </div>
+          <div class="field">
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" />
+          </div>
+          <div class="field">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+          <div class="field">
+            <label for="message">문의 내용 <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required placeholder="문의하실 내용을 입력해 주세요."></textarea>
+          </div>
+          <button type="submit" class="btn">문의 보내기</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <!-- 연락처 / 파트너십 -->
+      <div class="contact-grid">
+        <div class="info-card">
+          <h2>연락처</h2>
+          <div class="row"><b>Email</b><span>heyseou@gmail.com</span></div>
+          <div class="row"><b>Phone</b><span>070-4243-0900</span></div>
+          <div class="row"><b>Address</b><span>서울특별시 강서구 양천로 24길 82</span></div>
+        </div>
+        <div class="info-card">
+          <h2>파트너십 제안</h2>
+          <p><b>펫푸드 제조사</b> — 무농약 허브 원료 공급 및 OEM 생산</p>
+          <p><b>농가</b> — 스마트팜 구축, 재배·유통 지원</p>
+          <p><b>스타트업 &amp; 브랜드</b> — 맞춤형 턴키 패키지 제공</p>
+          <p><b>해외 바이어</b> — 수출 및 공동 개발 가능</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="brand-name">주식회사 올어바웃팜 (AllaboutFarm)</p>
+      <p>대표 윤서우 | 대표번호 070-4243-0900</p>
+      <p>사업자등록번호 857-87-03331</p>
+      <p>서울시 강서구 양천로 24길 82</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
