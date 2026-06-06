@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 540" width="400" height="540" role="img" aria-label="발아-이식 일체형 미디어 큐브 홀더 구조 일러스트">
+  <!-- All About Farm — Media Cube Holder (Patent Fig.1 clean illustration) -->
+  <defs>
+    <style>
+      .ink   { fill:none; stroke:#1F4A33; stroke-width:2.4; stroke-linejoin:round; stroke-linecap:round; }
+      .ink-s { fill:none; stroke:#2E6B49; stroke-width:1.6; stroke-linejoin:round; stroke-linecap:round; }
+      .hidden{ fill:none; stroke:#AEC4B6; stroke-width:1.5; stroke-linejoin:round; stroke-linecap:round; stroke-dasharray:4 4; }
+      .slot  { fill:none; stroke:#2E6B49; stroke-width:4.5; stroke-linecap:round; opacity:.6; }
+      .cubeT { fill:#E9F2EC; stroke:#2E6B49; stroke-width:1.5; stroke-linejoin:round; }
+      .cubeL { fill:#DCEAE0; stroke:#2E6B49; stroke-width:1.4; stroke-linejoin:round; }
+      .cubeR { fill:#EEF5F0; stroke:#2E6B49; stroke-width:1.4; stroke-linejoin:round; }
+    </style>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="200" cy="500" rx="70" ry="8" fill="#1F4A33" opacity="0.07"/>
+
+  <!-- ===== clamshell frame: hidden (back) edges ===== -->
+  <path class="hidden" d="M200,86 L200,182"/>
+  <path class="hidden" d="M112,216 L200,182"/>
+  <path class="hidden" d="M288,216 L200,182"/>
+
+  <!-- ===== media cube (inside the frame) ===== -->
+  <polygon class="cubeT" points="200,138 252,160 200,182 148,160"/>
+  <polygon class="cubeL" points="148,160 200,182 200,242 148,220"/>
+  <polygon class="cubeR" points="200,182 252,160 252,220 200,242"/>
+
+  <!-- ===== clamshell frame: front + top edges ===== -->
+  <!-- top face -->
+  <polygon class="ink" points="200,86 288,120 200,154 112,120"/>
+  <!-- top opening -->
+  <polygon class="ink-s" points="200,99.6 252.8,120 200,140.4 147.2,120"/>
+  <!-- vertical posts -->
+  <path class="ink" d="M112,120 L112,216"/>
+  <path class="ink" d="M200,154 L200,250"/>
+  <path class="ink" d="M288,120 L288,216"/>
+  <!-- front bottom edges -->
+  <path class="ink" d="M112,216 L200,250"/>
+  <path class="ink" d="M288,216 L200,250"/>
+
+  <!-- ===== root funnel ===== -->
+  <ellipse class="ink" cx="200" cy="250" rx="70" ry="20"/>
+  <path class="ink" d="M130,250 L176,430"/>
+  <path class="ink" d="M270,250 L224,430"/>
+  <ellipse class="ink" cx="200" cy="430" rx="24" ry="8"/>
+  <!-- drainage slots -->
+  <path class="slot" d="M150,274 L186,408"/>
+  <path class="slot" d="M175,272 L193,410"/>
+  <path class="slot" d="M200,271 L200,411"/>
+  <path class="slot" d="M225,272 L207,410"/>
+  <path class="slot" d="M250,274 L214,408"/>
+
+  <!-- ===== fixing ring ===== -->
+  <!-- thickness side walls + lower front arc -->
+  <path class="ink" d="M134,448 L134,461"/>
+  <path class="ink" d="M266,448 L266,461"/>
+  <path class="ink" d="M134,461 A66,18 0 0 0 266,461"/>
+  <!-- top rim -->
+  <ellipse class="ink" cx="200" cy="448" rx="66" ry="18"/>
+  <!-- inner hole -->
+  <ellipse class="ink-s" cx="200" cy="446" rx="30" ry="9"/>
+  <!-- small notch on rim -->
+  <path class="ink-s" d="M246,455 L246,463 L256,463" />
+</svg>
