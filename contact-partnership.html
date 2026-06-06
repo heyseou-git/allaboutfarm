@@ -48,8 +48,9 @@
     </div>
   </div>
 
-  <div class="page-head">
+  <div class="page-head has-fixed-header">
     <div class="container">
+      <span class="eyebrow">Contact &amp; Partnership</span>
       <h1>CONTACT &amp; PARTNERSHIP</h1>
       <p class="lead">올어바웃팜과 함께할 파트너를 기다립니다. 아래 폼으로 문의해 주세요.</p>
     </div>
@@ -57,65 +58,102 @@
 
   <section class="section">
     <div class="container">
+      <div class="contact-layout">
 
-      <!-- 문의 폼 -->
-      <div class="form-card" style="max-width:680px; margin:0 auto;">
-        <h2>문의하기</h2>
-        <p class="desc">제품·서비스·파트너십 등 어떤 문의든 남겨 주시면 빠르게 회신드리겠습니다.</p>
-        <!--
-          [작동 폼 설정 안내]
-          1) https://formspree.io 가입 후 heyseou@gmail.com 으로 폼 생성
-          2) 발급된 엔드포인트(https://formspree.io/f/XXXXXXXX)를 아래 action 의 YOUR_FORM_ID 자리에 교체
-          미설정 상태에서는 자동으로 메일앱(mailto) 전송으로 폴백됩니다.
-        -->
-        <form class="js-contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="field">
-            <label for="name">이름 / 회사명 <span aria-hidden="true">*</span></label>
-            <input type="text" id="name" name="name" required placeholder="홍길동 / (주)○○" />
-          </div>
-          <div class="field">
-            <label for="phone">연락처</label>
-            <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" />
-          </div>
-          <div class="field">
-            <label for="email">이메일</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" />
-          </div>
-          <div class="field">
-            <label for="message">문의 내용 <span aria-hidden="true">*</span></label>
-            <textarea id="message" name="message" required placeholder="문의하실 내용을 입력해 주세요."></textarea>
-          </div>
-          <button type="submit" class="btn">문의 보내기</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-
-      <!-- 연락처 / 파트너십 -->
-      <div class="contact-grid">
-        <div class="info-card">
-          <h2>연락처</h2>
-          <div class="row"><b>Email</b><span>heyseou@gmail.com</span></div>
-          <div class="row"><b>Phone</b><span>070-4243-0900</span></div>
-          <div class="row"><b>Address</b><span>서울특별시 강서구 양천로 24길 82</span></div>
+        <!-- 문의 폼 -->
+        <div class="form-card reveal">
+          <h2>문의하기</h2>
+          <p class="desc">제품·서비스·파트너십 등 어떤 문의든 남겨 주시면 빠르게 회신드리겠습니다.</p>
+          <!--
+            [작동 폼 설정 안내]
+            1) https://formspree.io 가입 후 heyseou@gmail.com 으로 폼 생성
+            2) 발급된 엔드포인트(https://formspree.io/f/XXXXXXXX)를 아래 action 의 YOUR_FORM_ID 자리에 교체
+            미설정 상태에서는 자동으로 메일앱(mailto) 전송으로 폴백됩니다.
+          -->
+          <form class="js-contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="field">
+              <label for="name">이름 / 회사명 <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="홍길동 / (주)○○" />
+            </div>
+            <div class="field">
+              <label for="phone">연락처</label>
+              <input type="tel" id="phone" name="phone" placeholder="010-0000-0000" />
+            </div>
+            <div class="field">
+              <label for="email">이메일</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="message">문의 내용 <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" required placeholder="문의하실 내용을 입력해 주세요."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">문의 보내기</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
-        <div class="info-card">
-          <h2>파트너십 제안</h2>
-          <p><b>펫푸드 제조사</b> — 무농약 허브 원료 공급 및 OEM 생산</p>
-          <p><b>농가</b> — 스마트팜 구축, 재배·유통 지원</p>
-          <p><b>스타트업 &amp; 브랜드</b> — 맞춤형 턴키 패키지 제공</p>
-          <p><b>해외 바이어</b> — 수출 및 공동 개발 가능</p>
-        </div>
-      </div>
 
+        <!-- 연락처 / 파트너십 -->
+        <div class="info-stack">
+          <div class="info-card reveal d1">
+            <h2>연락처</h2>
+            <div class="row">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></span>
+              <span><span class="k">EMAIL</span><br /><span class="v">heyseou@gmail.com</span></span>
+            </div>
+            <div class="row">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+              <span><span class="k">PHONE</span><br /><span class="v">070-4243-0900</span></span>
+            </div>
+            <div class="row">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <span><span class="k">ADDRESS</span><br /><span class="v">서울특별시 강서구 양천로 24길 82</span></span>
+            </div>
+          </div>
+
+          <div class="info-card reveal d2">
+            <h2>파트너십 제안</h2>
+            <ul class="partner-list">
+              <li><b>펫푸드 제조사</b> — 무농약 허브 원료 공급 및 OEM 생산</li>
+              <li><b>농가</b> — 스마트팜 구축, 재배·유통 지원</li>
+              <li><b>스타트업 &amp; 브랜드</b> — 맞춤형 턴키 패키지 제공</li>
+              <li><b>해외 바이어</b> — 수출 및 공동 개발 가능</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container">
-      <p class="brand-name">주식회사 올어바웃팜 (AllaboutFarm)</p>
-      <p>대표 윤서우 | 대표번호 070-4243-0900</p>
-      <p>사업자등록번호 857-87-03331</p>
-      <p>서울시 강서구 양천로 24길 82</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="f-logo"><img src="assets/img/logo.png" alt="" /><span>(주)올어바웃팜</span></div>
+          <p>스마트팜 기술기반의 웰니스 전문기업. 건강한 원료가 시작되는 곳에서 재배·가공·유통을 하나로 연결합니다.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="brand.html">BRAND</a></li>
+            <li><a href="product-service.html">PRODUCT &amp; SERVICE</a></li>
+            <li><a href="technology.html">TECHNOLOGY</a></li>
+            <li><a href="wellness-story.html">WELLNESS STORY</a></li>
+            <li><a href="contact-partnership.html">CONTACT &amp; PARTNERSHIP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="line">주식회사 올어바웃팜 (AllaboutFarm)</div>
+          <div class="line">대표 윤서우 | 070-4243-0900</div>
+          <div class="line">사업자등록번호 857-87-03331</div>
+          <div class="line">서울시 강서구 양천로 24길 82</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> All About Farm Co., Ltd. All rights reserved.</span>
+        <span>A Wellness Life for Us</span>
+      </div>
     </div>
   </footer>
 
